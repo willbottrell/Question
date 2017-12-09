@@ -1,0 +1,19 @@
+{
+  "name": "Question",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/willbottrell/Question.git"
+  },
+  "author": "Will Bottrell",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/willbottrell/Question/issues"
+  },
+  "dependencies": {
+    "express": "~4.15.4"
+  }
+}
