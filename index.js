@@ -1,7 +1,10 @@
-var static = require('node-static');
-var file = new static.Server();
-require('http').createServer(function(request, response) {
-  request.addListener('end', function() {
-    file.serve(request, response);
-  }).resume();
-}).listen(process.env.PORT || 3000);
+var http = require('http');
+var fs = require('fs');
+
+http.createServer(function(req, res){
+    fs.readFile('index.html',function (err, data){
+        res.writeHead(200, {'Content-Type': 'text/html','Content-Length':data.length});
+        res.write(data);
+        res.end();
+    });
+}).listen(8000);
