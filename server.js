@@ -3,7 +3,7 @@
 
  /* serves main page */
  app.get("/", function(req, res) {
-    response.sendfile('client/index.html');
+    res.sendfile('client/index.html');
  });
 
  var port = process.env.PORT || 5000;
