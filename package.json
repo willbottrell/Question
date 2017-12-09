@@ -2,7 +2,7 @@
   "name": "Question",
   "version": "0.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {},
   "repository": {
     "type": "git",
@@ -14,6 +14,7 @@
     "url": "https://github.com/willbottrell/Question/issues"
   },
   "dependencies": {
-    "express": "~4.15.4"
+    "express": "~4.15.4",
+    "node-static": "^0.7.10"
   }
 }
