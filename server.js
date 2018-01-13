@@ -2,8 +2,8 @@
  var app = express();
 
  /* serves main page */
- app.get("/", function(req, res) {
-    res.render('client/index.html');
+ app.get("*", function(req, res) {
+    res.sendFile("client/index.html", {root: '.'});
  });
 
  var port = process.env.PORT || 5000;
